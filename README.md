@@ -1,7 +1,7 @@
 **Requirements:**  <br>
 python3 <br>
-numpy <br>
-time <br>
+numpy (python package)<br>
+time (python package)<br>
 CMake >= 3.10 <br>
 A C++-11 compatible compiler. <br>
 (If you are on ubuntu, almost surely you will have g++ of a sufficient version)
