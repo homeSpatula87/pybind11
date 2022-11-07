@@ -1,14 +1,13 @@
-Requirements:
+**Requirements:**
 python3
 numpy
 time
-
 CMake >= 3.10
 A C++-11 compatible compiler.
-
 (If you are on ubuntu, almost surely you will have g++ of a sufficient version)
 
 
+**Info:**
 pybind11 is a library for binding c++ (11 and up) code to python.
 This can be useful for recycling existing C++ code, and for trying to exploit
 the performance benefits of C++.
@@ -18,10 +17,10 @@ for deep learning applications)
 
 All my code is in the "practice" folder.
 the folder / file structure is as follows:
-
+```
 ./practice
     |
- 	|-- test.py
+    |-- test.py
     |-- tests.txt
     |-- cpp
      	|
@@ -30,24 +29,27 @@ the folder / file structure is as follows:
      	|-- build
             |
             |-- cpp_tests.cpython-310-x86_64-linux-gnu.so
+```
+File descriptions:
 
-test.py:
+*test.py:*
     the python file testing the library.
     
-tests.txt:
+*tests.txt:*
     a text files with the output of test.py
     
-CMakesList.txt:
+*CMakesList.txt:*
     The CMake file used for building the library
     
-wrappers.cpp:
+*wrappers.cpp:*
     The cpp file containing the cpp code and using the pybind11
     code for linking cpp tp python
     
-cpp_tests.cpython-310-x86_64-linux-gnu.so:
+*cpp_tests.cpython-310-x86_64-linux-gnu.so:*
     the generated library
-    
-*Important:*    
+
+
+**IMPORTANT:**   
 The generated library will be specific to your operating system
 and python version, so I suggest you build it yourself.
 
@@ -59,20 +61,14 @@ This is done as follows:
 
 Now the new library should be visible in the build folder.
 
-To test it, navigate the the practice folder and run "python3 test.py".
-It took me less than 1 min to perform the tests, if it seems to be taking
+To test it, navigate the the `practice` folder and run "python3 test.py".
+It took me less than 1 min to perform the tests. If it seems to be taking
 longer for you, you can edit the test.py file to be dealing with shorter
 lists / arrays.
 
-Conclusion:
+**Conclusion:**
 Not that hard to use.
 Thew performance benefits might seem disappointing, but for these basic
 operations it was as I expected.
 (Also note, numpy is written in C, I don't think you should be using
 pybind11 to compete with operations in-built in numpy)
-
-
-
-
-
-
