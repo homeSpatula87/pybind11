@@ -1,13 +1,13 @@
-**Requirements:**
-python3
-numpy
-time
-CMake >= 3.10
-A C++-11 compatible compiler.
+**Requirements:**  <br>
+python3 <br>
+numpy <br>
+time <br>
+CMake >= 3.10 <br>
+A C++-11 compatible compiler. <br>
 (If you are on ubuntu, almost surely you will have g++ of a sufficient version)
 
 
-**Info:**
+**Info:** <br>
 pybind11 is a library for binding c++ (11 and up) code to python.
 This can be useful for recycling existing C++ code, and for trying to exploit
 the performance benefits of C++.
@@ -49,15 +49,15 @@ File descriptions:
     the generated library
 
 
-**IMPORTANT:**   
+**IMPORTANT:**<br>  
 The generated library will be specific to your operating system
 and python version, so I suggest you build it yourself.
 
-This is done as follows:
-1) make sure you satisfy the requirements in requirements.txt.
-2) navigate to the build directory.
-3) run the command "cmake .."
-4) run the command "make"
+This is done as follows: <br>
+1) make sure you satisfy the requirements in requirements.txt. <br>
+2) navigate to the build directory. <br>
+3) run the command "cmake .." <br>
+4) run the command "make" <br>
 
 Now the new library should be visible in the build folder.
 
@@ -66,7 +66,7 @@ It took me less than 1 min to perform the tests. If it seems to be taking
 longer for you, you can edit the test.py file to be dealing with shorter
 lists / arrays.
 
-**Conclusion:**
+**Conclusion:** <br>
 Not that hard to use.
 Thew performance benefits might seem disappointing, but for these basic
 operations it was as I expected.
