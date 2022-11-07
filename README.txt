@@ -54,7 +54,7 @@ and python version, so I suggest you build it yourself.
 This is done as follows:
 1) make sure you satisfy the requirements in requirements.txt.
 2) navigate to the build directory.
-3) run the command "cmake"
+3) run the command "cmake .."
 4) run the command "make"
 
 Now the new library should be visible in the build folder.
