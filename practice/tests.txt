@@ -1,0 +1,23 @@
+Testing class:
+('first', 'last') 
+ 
+
+
+
+
+comparing for loops:
+2.578879929072518e+21
+cpp for loop time: 2.1404247283935547 
+
+2.6666664666689716e+21
+py for loop time: 1.5944862365722656 
+ 
+
+comparing dot products
+cpp conversion time: 4.50156569480896
+cpp dot prod total time: 4.711028575897217
+cpp dot prod time without conversion: 0.20948028564453125 
+
+np dot prod time: 0.007229328155517578 
+
+results of the dot products: 1000000000.0 1000000000.0
